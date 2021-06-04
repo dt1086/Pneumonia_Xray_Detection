@@ -4,7 +4,7 @@
 
 ## Overview
 
-Our project was to create an image classification model that given an x-ray could determine whether a child has pneumonia or not. We specifically looked into and outlined how an x-ray of a child with pneumonia is different from other x-rays. Pneumonia x-rays have characteristic white blobs of shapes in the lungs which also makes the x-ray less clear (called infiltrates). We used different CNN architectures on our different models and found that a relatively basic CNN model seems to work best over other more specific CNN architectures. This analysis can be used by any medical institution looking to further their understanding of x-rays of pneumonia.
+Our project was to create an image classification model that given an x-ray could determine whether a child has pneumonia or not. We specifically looked into and outlined how an x-ray of a child with pneumonia is different from other x-rays. Pneumonia x-rays have characteristic white blobs of shapes in the lungs which also makes the x-ray less clear (called infiltrates). We used different CNN architectures on our different models and found that a regularized LeNet-5 model (a specific type of CNN architecture) seems to work best. This analysis can be used by any medical institution looking to further their understanding of x-rays of pneumonia.
 
 ## Business Problem
 
@@ -26,11 +26,11 @@ For preprocessing, we resized each image to be 128x128 pixels. We leveraged neur
 
 ## Best Results
 
-Our strongest model was a convolutional neural network of 3 layers (alternating convolution and max pooling layers) that was able to achieve an accuracy of 98% on the training set and 95% on the testing set.
+Our strongest model was a regularized LeNet-5 network of 3 layers (alternating convolution and max pooling layers) that was able to achieve an accuracy of 96% on the training set and 79% on the testing set.
 
 ## Conclusions
 
-While we were relieved to have one high-performing model given our 3-day time window, we realize that we've just scraped the surface of the different CNN architectures. Given more time and stronger computing power, we'd like to explore the other types of architectures and see their performance. 
+While we were relieved to have one high-performing model given our 3-day time window, we realize that we've just scraped the surface of the different CNN architectures. Given more time and stronger computing power, we'd like to explore the other types of architectures and be able to experiment with more regularization. 
 
 ## For More Information
 
@@ -42,8 +42,7 @@ For any additional questions, please contact **Christopher de la Cruz at cdelacr
 
 ```
 ├── README.md                                         <- The top-level README for reviewers of this project
-├── Phase4 Project.pdf                                <- PDF version of project presentation
-├── Pneumonia Xray Detection.ipynb        <- Narrative documentation of analysis in Jupyter notebook 
+├── Pneumonia Detection - Phase 4 Project.pdf         <- PDF version of project presentation
+├── Pneumonia Detection Analysis.ipynb                <- Narrative documentation of analysis in Jupyter notebook 
 ├── data                                              <- Both sourced externally and generated from code     
-└── images                                            <- Both sourced externally and generated from code
 ```
